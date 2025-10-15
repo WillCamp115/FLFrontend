@@ -1,3 +1,4 @@
+plaid
 fastapi
 uvicorn
 sqlalchemy[asyncio]
