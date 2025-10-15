@@ -1,0 +1,1387 @@
+{
+    "accounts": [
+      {
+        "account_id": "Acct123456789",
+        "balances": {
+          "available": 1500.32,
+          "current": 1500.32,
+          "iso_currency_code": "USD",
+          "limit": null,
+          "unofficial_currency_code": null
+        },
+        "mask": "1234",
+        "name": "Plaid Checking",
+        "official_name": "Plaid Gold Standard 0% Interest Checking",
+        "subtype": "checking",
+        "type": "depository"
+      }
+    ],
+    "added": [
+      {
+        "account_id": "Acct123456789",
+        "account_owner": null,
+        "amount": 1200.00,
+        "iso_currency_code": "USD",
+        "unofficial_currency_code": null,
+        "category": ["Rent"],
+        "category_id": "16001000",
+        "check_number": null,
+        "counterparties": [
+          {
+            "name": "Apartment Management Co",
+            "type": "merchant",
+            "logo_url": null,
+            "website": null,
+            "entity_id": "RentEntity123",
+            "confidence_level": "HIGH"
+          }
+        ],
+        "date": "2025-02-01",
+        "datetime": "2025-02-01T09:00:00Z",
+        "authorized_date": "2025-02-01",
+        "authorized_datetime": "2025-02-01T09:00:00Z",
+        "location": {
+          "address": null,
+          "city": null,
+          "region": null,
+          "postal_code": null,
+          "country": "US",
+          "lat": null,
+          "lon": null,
+          "store_number": null
+        },
+        "name": "RENT PAYMENT - APT 4B",
+        "merchant_name": "Apartment Management Co",
+        "merchant_entity_id": "RentEntity123",
+        "logo_url": null,
+        "website": null,
+        "payment_meta": {
+          "by_order_of": null,
+          "payee": null,
+          "payer": null,
+          "payment_method": "ACH",
+          "payment_processor": null,
+          "ppd_id": null,
+          "reason": null,
+          "reference_number": null
+        },
+        "payment_channel": "online",
+        "pending": false,
+        "pending_transaction_id": null,
+        "personal_finance_category": {
+          "primary": "RENT_AND_UTILITIES",
+          "detailed": "RENT_AND_UTILITIES_RENT",
+          "confidence_level": "VERY_HIGH"
+        },
+        "personal_finance_category_icon_url": "https://plaid-category-icons.plaid.com/PFC_RENT_AND_UTILITIES.png",
+        "transaction_id": "TXN001",
+        "transaction_code": null,
+        "transaction_type": "special"
+      },
+      {
+        "account_id": "Acct123456789",
+        "account_owner": null,
+        "amount": 85.40,
+        "iso_currency_code": "USD",
+        "unofficial_currency_code": null,
+        "category": ["Utilities", "Electric"],
+        "category_id": "16002000",
+        "check_number": null,
+        "counterparties": [
+          {
+            "name": "SDG&E",
+            "type": "merchant",
+            "logo_url": "https://plaid-merchant-logos.plaid.com/sdge.png",
+            "website": "sdge.com",
+            "entity_id": "UtilityEntity456",
+            "confidence_level": "VERY_HIGH"
+          }
+        ],
+        "date": "2025-02-03",
+        "datetime": "2025-02-03T12:00:00Z",
+        "authorized_date": "2025-02-03",
+        "authorized_datetime": "2025-02-03T12:00:00Z",
+        "location": {
+          "address": null,
+          "city": null,
+          "region": null,
+          "postal_code": null,
+          "country": "US",
+          "lat": null,
+          "lon": null,
+          "store_number": null
+        },
+        "name": "SDG&E ELECTRIC BILL",
+        "merchant_name": "SDG&E",
+        "merchant_entity_id": "UtilityEntity456",
+        "logo_url": "https://plaid-merchant-logos.plaid.com/sdge.png",
+        "website": "sdge.com",
+        "payment_meta": {
+          "by_order_of": null,
+          "payee": null,
+          "payer": null,
+          "payment_method": "ACH",
+          "payment_processor": null,
+          "ppd_id": null,
+          "reason": null,
+          "reference_number": null
+        },
+        "payment_channel": "online",
+        "pending": false,
+        "pending_transaction_id": null,
+        "personal_finance_category": {
+          "primary": "RENT_AND_UTILITIES",
+          "detailed": "RENT_AND_UTILITIES_ELECTRIC",
+          "confidence_level": "VERY_HIGH"
+        },
+        "personal_finance_category_icon_url": "https://plaid-category-icons.plaid.com/PFC_RENT_AND_UTILITIES.png",
+        "transaction_id": "TXN002",
+        "transaction_code": null,
+        "transaction_type": "special"
+      },
+      {
+        "account_id": "Acct123456789",
+        "account_owner": null,
+        "amount": 45.20,
+        "iso_currency_code": "USD",
+        "unofficial_currency_code": null,
+        "category": ["Utilities", "Internet"],
+        "category_id": "16003000",
+        "check_number": null,
+        "counterparties": [
+          {
+            "name": "Spectrum",
+            "type": "merchant",
+            "logo_url": "https://plaid-merchant-logos.plaid.com/spectrum.png",
+            "website": "spectrum.com",
+            "entity_id": "UtilityEntity789",
+            "confidence_level": "VERY_HIGH"
+          }
+        ],
+        "date": "2025-02-05",
+        "datetime": "2025-02-05T10:00:00Z",
+        "authorized_date": "2025-02-05",
+        "authorized_datetime": "2025-02-05T10:00:00Z",
+        "location": {
+          "address": null,
+          "city": null,
+          "region": null,
+          "postal_code": null,
+          "country": "US",
+          "lat": null,
+          "lon": null,
+          "store_number": null
+        },
+        "name": "SPECTRUM INTERNET BILL",
+        "merchant_name": "Spectrum",
+        "merchant_entity_id": "UtilityEntity789",
+        "logo_url": "https://plaid-merchant-logos.plaid.com/spectrum.png",
+        "website": "spectrum.com",
+        "payment_meta": {
+          "by_order_of": null,
+          "payee": null,
+          "payer": null,
+          "payment_method": "ACH",
+          "payment_processor": null,
+          "ppd_id": null,
+          "reason": null,
+          "reference_number": null
+        },
+        "payment_channel": "online",
+        "pending": false,
+        "pending_transaction_id": null,
+        "personal_finance_category": {
+          "primary": "RENT_AND_UTILITIES",
+          "detailed": "RENT_AND_UTILITIES_INTERNET",
+          "confidence_level": "VERY_HIGH"
+        },
+        "personal_finance_category_icon_url": "https://plaid-category-icons.plaid.com/PFC_RENT_AND_UTILITIES.png",
+        "transaction_id": "TXN003",
+        "transaction_code": null,
+        "transaction_type": "special"
+      },
+      {
+        "account_id": "Acct123456789",
+        "account_owner": null,
+        "amount": 65.30,
+        "iso_currency_code": "USD",
+        "unofficial_currency_code": null,
+        "category": ["Shops", "Supermarkets and Groceries"],
+        "category_id": "19046000",
+        "check_number": null,
+        "counterparties": [
+          {
+            "name": "Trader Joe's",
+            "type": "merchant",
+            "logo_url": "https://plaid-merchant-logos.plaid.com/trader_joes.png",
+            "website": "traderjoes.com",
+            "entity_id": "GroceryEntity123",
+            "confidence_level": "VERY_HIGH"
+          }
+        ],
+        "date": "2025-02-07",
+        "datetime": "2025-02-07T15:30:00Z",
+        "authorized_date": "2025-02-07",
+        "authorized_datetime": "2025-02-07T15:30:00Z",
+        "location": {
+          "address": "1234 Market St",
+          "city": "San Diego",
+          "region": "CA",
+          "postal_code": "92101",
+          "country": "US",
+          "lat": 32.7157,
+          "lon": -117.1611,
+          "store_number": "456"
+        },
+        "name": "TRADER JOE'S #456",
+        "merchant_name": "Trader Joe's",
+        "merchant_entity_id": "GroceryEntity123",
+        "logo_url": "https://plaid-merchant-logos.plaid.com/trader_joes.png",
+        "website": "traderjoes.com",
+        "payment_meta": {
+          "by_order_of": null,
+          "payee": null,
+          "payer": null,
+          "payment_method": null,
+          "payment_processor": null,
+          "ppd_id": null,
+          "reason": null,
+          "reference_number": null
+        },
+        "payment_channel": "in store",
+        "pending": false,
+        "pending_transaction_id": null,
+        "personal_finance_category": {
+          "primary": "GENERAL_MERCHANDISE",
+          "detailed": "GENERAL_MERCHANDISE_GROCERIES",
+          "confidence_level": "VERY_HIGH"
+        },
+        "personal_finance_category_icon_url": "https://plaid-category-icons.plaid.com/PFC_GENERAL_MERCHANDISE.png",
+        "transaction_id": "TXN004",
+        "transaction_code": null,
+        "transaction_type": "place"
+      },
+      {
+        "account_id": "Acct123456789",
+        "account_owner": null,
+        "amount": 32.50,
+        "iso_currency_code": "USD",
+        "unofficial_currency_code": null,
+        "category": ["Food and Drink", "Restaurants"],
+        "category_id": "13005000",
+        "check_number": null,
+        "counterparties": [
+          {
+            "name": "Chipotle",
+            "type": "merchant",
+            "logo_url": "https://plaid-merchant-logos.plaid.com/chipotle.png",
+            "website": "chipotle.com",
+            "entity_id": "FoodEntity456",
+            "confidence_level": "VERY_HIGH"
+          }
+        ],
+        "date": "2025-02-09",
+        "datetime": "2025-02-09T18:45:00Z",
+        "authorized_date": "2025-02-09",
+        "authorized_datetime": "2025-02-09T18:45:00Z",
+        "location": {
+          "address": "7890 Broadway",
+          "city": "San Diego",
+          "region": "CA",
+          "postal_code": "92103",
+          "country": "US",
+          "lat": 32.7510,
+          "lon": -117.1457,
+          "store_number": "789"
+        },
+        "name": "CHIPOTLE #789",
+        "merchant_name": "Chipotle",
+        "merchant_entity_id": "FoodEntity456",
+        "logo_url": "https://plaid-merchant-logos.plaid.com/chipotle.png",
+        "website": "chipotle.com",
+        "payment_meta": {
+          "by_order_of": null,
+          "payee": null,
+          "payer": null,
+          "payment_method": null,
+          "payment_processor": null,
+          "ppd_id": null,
+          "reason": null,
+          "reference_number": null
+        },
+        "payment_channel": "in store",
+        "pending": false,
+        "pending_transaction_id": null,
+        "personal_finance_category": {
+          "primary": "FOOD_AND_DRINK",
+          "detailed": "FOOD_AND_DRINK_RESTAURANTS",
+          "confidence_level": "VERY_HIGH"
+        },
+        "personal_finance_category_icon_url": "https://plaid-category-icons.plaid.com/PFC_FOOD_AND_DRINK.png",
+        "transaction_id": "TXN005",
+        "transaction_code": null,
+        "transaction_type": "place"
+      },
+      {
+        "account_id": "Acct123456789",
+        "account_owner": null,
+        "amount": 15.75,
+        "iso_currency_code": "USD",
+        "unofficial_currency_code": null,
+        "category": ["Food and Drink", "Coffee Shops"],
+        "category_id": "13005043",
+        "check_number": null,
+        "counterparties": [
+          {
+            "name": "Starbucks",
+            "type": "merchant",
+            "logo_url": "https://plaid-merchant-logos.plaid.com/starbucks.png",
+            "website": "starbucks.com",
+            "entity_id": "CoffeeEntity123",
+            "confidence_level": "VERY_HIGH"
+          }
+        ],
+        "date": "2025-02-12",
+        "datetime": "2025-02-12T08:15:00Z",
+        "authorized_date": "2025-02-12",
+        "authorized_datetime": "2025-02-12T08:15:00Z",
+        "location": {
+          "address": "4567 Main St",
+          "city": "San Diego",
+          "region": "CA",
+          "postal_code": "92104",
+          "country": "US",
+          "lat": 32.7400,
+          "lon": -117.1300,
+          "store_number": "1234"
+        },
+        "name": "STARBUCKS #1234",
+        "merchant_name": "Starbucks",
+        "merchant_entity_id": "CoffeeEntity123",
+        "logo_url": "https://plaid-merchant-logos.plaid.com/starbucks.png",
+        "website": "starbucks.com",
+        "payment_meta": {
+          "by_order_of": null,
+          "payee": null,
+          "payer": null,
+          "payment_method": null,
+          "payment_processor": null,
+          "ppd_id": null,
+          "reason": null,
+          "reference_number": null
+        },
+        "payment_channel": "in store",
+        "pending": false,
+        "pending_transaction_id": null,
+        "personal_finance_category": {
+          "primary": "FOOD_AND_DRINK",
+          "detailed": "FOOD_AND_DRINK_COFFEE",
+          "confidence_level": "VERY_HIGH"
+        },
+        "personal_finance_category_icon_url": "https://plaid-category-icons.plaid.com/PFC_FOOD_AND_DRINK.png",
+        "transaction_id": "TXN006",
+        "transaction_code": null,
+        "transaction_type": "place"
+      },
+      {
+        "account_id": "Acct123456789",
+        "account_owner": null,
+        "amount": 22.90,
+        "iso_currency_code": "USD",
+        "unofficial_currency_code": null,
+        "category": ["Food and Drink", "Restaurants", "Fast Food"],
+        "category_id": "13005032",
+        "check_number": null,
+        "counterparties": [
+          {
+            "name": "Uber Eats",
+            "type": "marketplace",
+            "logo_url": "https://plaid-counterparty-logos.plaid.com/uber_eats.png",
+            "website": "ubereats.com",
+            "entity_id": "FoodDeliveryEntity789",
+            "confidence_level": "HIGH"
+          },
+          {
+            "name": "Taco Bell",
+            "type": "merchant",
+            "logo_url": "https://plaid-merchant-logos.plaid.com/taco_bell.png",
+            "website": "tacobell.com",
+            "entity_id": "FastFoodEntity456",
+            "confidence_level": "VERY_HIGH"
+          }
+        ],
+        "date": "2025-02-15",
+        "datetime": "2025-02-15T19:00:00Z",
+        "authorized_date": "2025-02-15",
+        "authorized_datetime": "2025-02-15T19:00:00Z",
+        "location": {
+          "address": null,
+          "city": null,
+          "region": null,
+          "postal_code": null,
+          "country": null,
+          "lat": null,
+          "lon": null,
+          "store_number": null
+        },
+        "name": "UBER EATS TACO BELL",
+        "merchant_name": "Taco Bell",
+        "merchant_entity_id": "FastFoodEntity456",
+        "logo_url": "https://plaid-merchant-logos.plaid.com/taco_bell.png",
+        "website": "tacobell.com",
+        "payment_meta": {
+          "by_order_of": null,
+          "payee": null,
+          "payer": null,
+          "payment_method": null,
+          "payment_processor": null,
+          "ppd_id": null,
+          "reason": null,
+          "reference_number": null
+        },
+        "payment_channel": "online",
+        "pending": false,
+        "pending_transaction_id": null,
+        "personal_finance_category": {
+          "primary": "FOOD_AND_DRINK",
+          "detailed": "FOOD_AND_DRINK_FAST_FOOD",
+          "confidence_level": "VERY_HIGH"
+        },
+        "personal_finance_category_icon_url": "https://plaid-category-icons.plaid.com/PFC_FOOD_AND_DRINK.png",
+        "transaction_id": "TXN007",
+        "transaction_code": null,
+        "transaction_type": "digital"
+      },
+      {
+        "account_id": "Acct123456789",
+        "account_owner": null,
+        "amount": 9.99,
+        "iso_currency_code": "USD",
+        "unofficial_currency_code": null,
+        "category": ["Entertainment", "Streaming Services"],
+        "category_id": "11007000",
+        "check_number": null,
+        "counterparties": [
+          {
+            "name": "Netflix",
+            "type": "merchant",
+            "logo_url": "https://plaid-merchant-logos.plaid.com/netflix.png",
+            "website": "netflix.com",
+            "entity_id": "StreamingEntity123",
+            "confidence_level": "VERY_HIGH"
+          }
+        ],
+        "date": "2025-02-18",
+        "datetime": "2025-02-18T00:00:00Z",
+        "authorized_date": "2025-02-18",
+        "authorized_datetime": "2025-02-18T00:00:00Z",
+        "location": {
+          "address": null,
+          "city": null,
+          "region": null,
+          "postal_code": null,
+          "country": null,
+          "lat": null,
+          "lon": null,
+          "store_number": null
+        },
+        "name": "NETFLIX SUBSCRIPTION",
+        "merchant_name": "Netflix",
+        "merchant_entity_id": "StreamingEntity123",
+        "logo_url": "https://plaid-merchant-logos.plaid.com/netflix.png",
+        "website": "netflix.com",
+        "payment_meta": {
+          "by_order_of": null,
+          "payee": null,
+          "payer": null,
+          "payment_method": null,
+          "payment_processor": null,
+          "ppd_id": null,
+          "reason": null,
+          "reference_number": null
+        },
+        "payment_channel": "online",
+        "pending": false,
+        "pending_transaction_id": null,
+        "personal_finance_category": {
+          "primary": "ENTERTAINMENT",
+          "detailed": "ENTERTAINMENT_STREAMING_SERVICES",
+          "confidence_level": "VERY_HIGH"
+        },
+        "personal_finance_category_icon_url": "https://plaid-category-icons.plaid.com/PFC_ENTERTAINMENT.png",
+        "transaction_id": "TXN008",
+        "transaction_code": null,
+        "transaction_type": "digital"
+      },
+      {
+        "account_id": "Acct123456789",
+        "account_owner": null,
+        "amount": 42.15,
+        "iso_currency_code": "USD",
+        "unofficial_currency_code": null,
+        "category": ["Travel", "Gas Stations"],
+        "category_id": "22009000",
+        "check_number": null,
+        "counterparties": [
+          {
+            "name": "Shell",
+            "type": "merchant",
+            "logo_url": "https://plaid-merchant-logos.plaid.com/shell.png",
+            "website": "shell.com",
+            "entity_id": "GasEntity456",
+            "confidence_level": "VERY_HIGH"
+          }
+        ],
+        "date": "2025-02-20",
+        "datetime": "2025-02-20T14:00:00Z",
+        "authorized_date": "2025-02-20",
+        "authorized_datetime": "2025-02-20T14:00:00Z",
+        "location": {
+          "address": "8901 Gas Rd",
+          "city": "San Diego",
+          "region": "CA",
+          "postal_code": "92105",
+          "country": "US",
+          "lat": 32.7200,
+          "lon": -117.1100,
+          "store_number": "5678"
+        },
+        "name": "SHELL #5678",
+        "merchant_name": "Shell",
+        "merchant_entity_id": "GasEntity456",
+        "logo_url": "https://plaid-merchant-logos.plaid.com/shell.png",
+        "website": "shell.com",
+        "payment_meta": {
+          "by_order_of": null,
+          "payee": null,
+          "payer": null,
+          "payment_method": null,
+          "payment_processor": null,
+          "ppd_id": null,
+          "reason": null,
+          "reference_number": null
+        },
+        "payment_channel": "in store",
+        "pending": false,
+        "pending_transaction_id": null,
+        "personal_finance_category": {
+          "primary": "TRANSPORTATION",
+          "detailed": "TRANSPORTATION_GAS",
+          "confidence_level": "VERY_HIGH"
+        },
+        "personal_finance_category_icon_url": "https://plaid-category-icons.plaid.com/PFC_TRANSPORTATION.png",
+        "transaction_id": "TXN009",
+        "transaction_code": null,
+        "transaction_type": "place"
+      },
+      {
+        "account_id": "Acct123456789",
+        "account_owner": null,
+        "amount": 78.60,
+        "iso_currency_code": "USD",
+        "unofficial_currency_code": null,
+        "category": ["Shops", "Supermarkets and Groceries"],
+        "category_id": "19046000",
+        "check_number": null,
+        "counterparties": [
+          {
+            "name": "Walmart",
+            "type": "merchant",
+            "logo_url": "https://plaid-merchant-logos.plaid.com/walmart.png",
+            "website": "walmart.com",
+            "entity_id": "GroceryEntity789",
+            "confidence_level": "VERY_HIGH"
+          }
+        ],
+        "date": "2025-02-22",
+        "datetime": "2025-02-22T11:00:00Z",
+        "authorized_date": "2025-02-22",
+        "authorized_datetime": "2025-02-22T11:00:00Z",
+        "location": {
+          "address": "13425 Community Rd",
+          "city": "Poway",
+          "region": "CA",
+          "postal_code": "92064",
+          "country": "US",
+          "lat": 32.9591,
+          "lon": -117.0377,
+          "store_number": "1700"
+        },
+        "name": "WALMART #1700",
+        "merchant_name": "Walmart",
+        "merchant_entity_id": "GroceryEntity789",
+        "logo_url": "https://plaid-merchant-logos.plaid.com/walmart.png",
+        "website": "walmart.com",
+        "payment_meta": {
+          "by_order_of": null,
+          "payee": null,
+          "payer": null,
+          "payment_method": null,
+          "payment_processor": null,
+          "ppd_id": null,
+          "reason": null,
+          "reference_number": null
+        },
+        "payment_channel": "in store",
+        "pending": false,
+        "pending_transaction_id": null,
+        "personal_finance_category": {
+          "primary": "GENERAL_MERCHANDISE",
+          "detailed": "GENERAL_MERCHANDISE_GROCERIES",
+          "confidence_level": "VERY_HIGH"
+        },
+        "personal_finance_category_icon_url": "https://plaid-category-icons.plaid.com/PFC_GENERAL_MERCHANDISE.png",
+        "transaction_id": "TXN010",
+        "transaction_code": null,
+        "transaction_type": "place"
+      },
+      {
+        "account_id": "Acct123456789",
+        "account_owner": null,
+        "amount": 1200.00,
+        "iso_currency_code": "USD",
+        "unofficial_currency_code": null,
+        "category": ["Rent"],
+        "category_id": "16001000",
+        "check_number": null,
+        "counterparties": [
+          {
+            "name": "Apartment Management Co",
+            "type": "merchant",
+            "logo_url": null,
+            "website": null,
+            "entity_id": "RentEntity123",
+            "confidence_level": "HIGH"
+          }
+        ],
+        "date": "2025-03-01",
+        "datetime": "2025-03-01T09:00:00Z",
+        "authorized_date": "2025-03-01",
+        "authorized_datetime": "2025-03-01T09:00:00Z",
+        "location": {
+          "address": null,
+          "city": null,
+          "region": null,
+          "postal_code": null,
+          "country": "US",
+          "lat": null,
+          "lon": null,
+          "store_number": null
+        },
+        "name": "RENT PAYMENT - APT 4B",
+        "merchant_name": "Apartment Management Co",
+        "merchant_entity_id": "RentEntity123",
+        "logo_url": null,
+        "website": null,
+        "payment_meta": {
+          "by_order_of": null,
+          "payee": null,
+          "payer": null,
+          "payment_method": "ACH",
+          "payment_processor": null,
+          "ppd_id": null,
+          "reason": null,
+          "reference_number": null
+        },
+        "payment_channel": "online",
+        "pending": false,
+        "pending_transaction_id": null,
+        "personal_finance_category": {
+          "primary": "RENT_AND_UTILITIES",
+          "detailed": "RENT_AND_UTILITIES_RENT",
+          "confidence_level": "VERY_HIGH"
+        },
+        "personal_finance_category_icon_url": "https://plaid-category-icons.plaid.com/PFC_RENT_AND_UTILITIES.png",
+        "transaction_id": "TXN011",
+        "transaction_code": null,
+        "transaction_type": "special"
+      },
+      {
+        "account_id": "Acct123456789",
+        "account_owner": null,
+        "amount": 90.10,
+        "iso_currency_code": "USD",
+        "unofficial_currency_code": null,
+        "category": ["Utilities", "Electric"],
+        "category_id": "16002000",
+        "check_number": null,
+        "counterparties": [
+          {
+            "name": "SDG&E",
+            "type": "merchant",
+            "logo_url": "https://plaid-merchant-logos.plaid.com/sdge.png",
+            "website": "sdge.com",
+            "entity_id": "UtilityEntity456",
+            "confidence_level": "VERY_HIGH"
+          }
+        ],
+        "date": "2025-03-03",
+        "datetime": "2025-03-03T12:00:00Z",
+        "authorized_date": "2025-03-03",
+        "authorized_datetime": "2025-03-03T12:00:00Z",
+        "location": {
+          "address": null,
+          "city": null,
+          "region": null,
+          "postal_code": null,
+          "country": "US",
+          "lat": null,
+          "lon": null,
+          "store_number": null
+        },
+        "name": "SDG&E ELECTRIC BILL",
+        "merchant_name": "SDG&E",
+        "merchant_entity_id": "UtilityEntity456",
+        "logo_url": "https://plaid-merchant-logos.plaid.com/sdge.png",
+        "website": "sdge.com",
+        "payment_meta": {
+          "by_order_of": null,
+          "payee": null,
+          "payer": null,
+          "payment_method": "ACH",
+          "payment_processor": null,
+          "ppd_id": null,
+          "reason": null,
+          "reference_number": null
+        },
+        "payment_channel": "online",
+        "pending": false,
+        "pending_transaction_id": null,
+        "personal_finance_category": {
+          "primary": "RENT_AND_UTILITIES",
+          "detailed": "RENT_AND_UTILITIES_ELECTRIC",
+          "confidence_level": "VERY_HIGH"
+        },
+        "personal_finance_category_icon_url": "https://plaid-category-icons.plaid.com/PFC_RENT_AND_UTILITIES.png",
+        "transaction_id": "TXN012",
+        "transaction_code": null,
+        "transaction_type": "special"
+      },
+      {
+        "account_id": "Acct123456789",
+        "account_owner": null,
+        "amount": 45.20,
+        "iso_currency_code": "USD",
+        "unofficial_currency_code": null,
+        "category": ["Utilities", "Internet"],
+        "category_id": "16003000",
+        "check_number": null,
+        "counterparties": [
+          {
+            "name": "Spectrum",
+            "type": "merchant",
+            "logo_url": "https://plaid-merchant-logos.plaid.com/spectrum.png",
+            "website": "spectrum.com",
+            "entity_id": "UtilityEntity789",
+            "confidence_level": "VERY_HIGH"
+          }
+        ],
+        "date": "2025-03-05",
+        "datetime": "2025-03-05T10:00:00Z",
+        "authorized_date": "2025-03-05",
+        "authorized_datetime": "2025-03-05T10:00:00Z",
+        "location": {
+          "address": null,
+          "city": null,
+          "region": null,
+          "postal_code": null,
+          "country": "US",
+          "lat": null,
+          "lon": null,
+          "store_number": null
+        },
+        "name": "SPECTRUM INTERNET BILL",
+        "merchant_name": "Spectrum",
+        "merchant_entity_id": "UtilityEntity789",
+        "logo_url": "https://plaid-merchant-logos.plaid.com/spectrum.png",
+        "website": "spectrum.com",
+        "payment_meta": {
+          "by_order_of": null,
+          "payee": null,
+          "payer": null,
+          "payment_method": "ACH",
+          "payment_processor": null,
+          "ppd_id": null,
+          "reason": null,
+          "reference_number": null
+        },
+        "payment_channel": "online",
+        "pending": false,
+        "pending_transaction_id": null,
+        "personal_finance_category": {
+          "primary": "RENT_AND_UTILITIES",
+          "detailed": "RENT_AND_UTILITIES_INTERNET",
+          "confidence_level": "VERY_HIGH"
+        },
+        "personal_finance_category_icon_url": "https://plaid-category-icons.plaid.com/PFC_RENT_AND_UTILITIES.png",
+        "transaction_id": "TXN013",
+        "transaction_code": null,
+        "transaction_type": "special"
+      },
+      {
+        "account_id": "Acct123456789",
+        "account_owner": null,
+        "amount": 58.90,
+        "iso_currency_code": "USD",
+        "unofficial_currency_code": null,
+        "category": ["Shops", "Supermarkets and Groceries"],
+        "category_id": "19046000",
+        "check_number": null,
+        "counterparties": [
+          {
+            "name": "Ralphs",
+            "type": "merchant",
+            "logo_url": "https://plaid-merchant-logos.plaid.com/ralphs.png",
+            "website": "ralphs.com",
+            "entity_id": "GroceryEntity456",
+            "confidence_level": "VERY_HIGH"
+          }
+        ],
+        "date": "2025-03-07",
+        "datetime": "2025-03-07T16:00:00Z",
+        "authorized_date": "2025-03-07",
+        "authorized_datetime": "2025-03-07T16:00:00Z",
+        "location": {
+          "address": "5678 Ocean Ave",
+          "city": "San Diego",
+          "region": "CA",
+          "postal_code": "92106",
+          "country": "US",
+          "lat": 32.7300,
+          "lon": -117.1700,
+          "store_number": "2345"
+        },
+        "name": "RALPHS #2345",
+        "merchant_name": "Ralphs",
+        "merchant_entity_id": "GroceryEntity456",
+        "logo_url": "https://plaid-merchant-logos.plaid.com/ralphs.png",
+        "website": "ralphs.com",
+        "payment_meta": {
+          "by_order_of": null,
+          "payee": null,
+          "payer": null,
+          "payment_method": null,
+          "payment_processor": null,
+          "ppd_id": null,
+          "reason": null,
+          "reference_number": null
+        },
+        "payment_channel": "in store",
+        "pending": false,
+        "pending_transaction_id": null,
+        "personal_finance_category": {
+          "primary": "GENERAL_MERCHANDISE",
+          "detailed": "GENERAL_MERCHANDISE_GROCERIES",
+          "confidence_level": "VERY_HIGH"
+        },
+        "personal_finance_category_icon_url": "https://plaid-category-icons.plaid.com/PFC_GENERAL_MERCHANDISE.png",
+        "transaction_id": "TXN014",
+        "transaction_code": null,
+        "transaction_type": "place"
+      },
+      {
+        "account_id": "Acct123456789",
+        "account_owner": null,
+        "amount": 28.40,
+        "iso_currency_code": "USD",
+        "unofficial_currency_code": null,
+        "category": ["Food and Drink", "Restaurants"],
+        "category_id": "13005000",
+        "check_number": null,
+        "counterparties": [
+          {
+            "name": "Olive Garden",
+            "type": "merchant",
+            "logo_url": "https://plaid-merchant-logos.plaid.com/olive_garden.png",
+            "website": "olivegarden.com",
+            "entity_id": "RestaurantEntity123",
+            "confidence_level": "VERY_HIGH"
+          }
+        ],
+        "date": "2025-03-10",
+        "datetime": "2025-03-10T19:30:00Z",
+        "authorized_date": "2025-03-10",
+        "authorized_datetime": "2025-03-10T19:30:00Z",
+        "location": {
+          "address": "9012 Dining Rd",
+          "city": "San Diego",
+          "region": "CA",
+          "postal_code": "92107",
+          "country": "US",
+          "lat": 32.7400,
+          "lon": -117.1800,
+          "store_number": "3456"
+        },
+        "name": "OLIVE GARDEN #3456",
+        "merchant_name": "Olive Garden",
+        "merchant_entity_id": "RestaurantEntity123",
+        "logo_url": "https://plaid-merchant-logos.plaid.com/olive_garden.png",
+        "website": "olivegarden.com",
+        "payment_meta": {
+          "by_order_of": null,
+          "payee": null,
+          "payer": null,
+          "payment_method": null,
+          "payment_processor": null,
+          "ppd_id": null,
+          "reason": null,
+          "reference_number": null
+        },
+        "payment_channel": "in store",
+        "pending": false,
+        "pending_transaction_id": null,
+        "personal_finance_category": {
+          "primary": "FOOD_AND_DRINK",
+          "detailed": "FOOD_AND_DRINK_RESTAURANTS",
+          "confidence_level": "VERY_HIGH"
+        },
+        "personal_finance_category_icon_url": "https://plaid-category-icons.plaid.com/PFC_FOOD_AND_DRINK.png",
+        "transaction_id": "TXN015",
+        "transaction_code": null,
+        "transaction_type": "place"
+      },
+      {
+        "account_id": "Acct123456789",
+        "account_owner": null,
+        "amount": 12.30,
+        "iso_currency_code": "USD",
+        "unofficial_currency_code": null,
+        "category": ["Food and Drink", "Coffee Shops"],
+        "category_id": "13005043",
+        "check_number": null,
+        "counterparties": [
+          {
+            "name": "Starbucks",
+            "type": "merchant",
+            "logo_url": "https://plaid-merchant-logos.plaid.com/starbucks.png",
+            "website": "starbucks.com",
+            "entity_id": "CoffeeEntity123",
+            "confidence_level": "VERY_HIGH"
+          }
+        ],
+        "date": "2025-03-13",
+        "datetime": "2025-03-13T08:00:00Z",
+        "authorized_date": "2025-03-13",
+        "authorized_datetime": "2025-03-13T08:00:00Z",
+        "location": {
+          "address": "4567 Main St",
+          "city": "San Diego",
+          "region": "CA",
+          "postal_code": "92104",
+          "country": "US",
+          "lat": 32.7400,
+          "lon": -117.1300,
+          "store_number": "1234"
+        },
+        "name": "STARBUCKS #1234",
+        "merchant_name": "Starbucks",
+        "merchant_entity_id": "CoffeeEntity123",
+        "logo_url": "https://plaid-merchant-logos.plaid.com/starbucks.png",
+        "website": "starbucks.com",
+        "payment_meta": {
+          "by_order_of": null,
+          "payee": null,
+          "payer": null,
+          "payment_method": null,
+          "payment_processor": null,
+          "ppd_id": null,
+          "reason": null,
+          "reference_number": null
+        },
+        "payment_channel": "in store",
+        "pending": false,
+        "pending_transaction_id": null,
+        "personal_finance_category": {
+          "primary": "FOOD_AND_DRINK",
+          "detailed": "FOOD_AND_DRINK_COFFEE",
+          "confidence_level": "VERY_HIGH"
+        },
+        "personal_finance_category_icon_url": "https://plaid-category-icons.plaid.com/PFC_FOOD_AND_DRINK.png",
+        "transaction_id": "TXN016",
+        "transaction_code": null,
+        "transaction_type": "place"
+      },
+      {
+        "account_id": "Acct123456789",
+        "account_owner": null,
+        "amount": 19.80,
+        "iso_currency_code": "USD",
+        "unofficial_currency_code": null,
+        "category": ["Food and Drink", "Restaurants", "Fast Food"],
+        "category_id": "13005032",
+        "check_number": null,
+        "counterparties": [
+          {
+            "name": "DoorDash",
+            "type": "marketplace",
+            "logo_url": "https://plaid-counterparty-logos.plaid.com/doordash.png",
+            "website": "doordash.com",
+            "entity_id": "FoodDeliveryEntity123",
+            "confidence_level": "HIGH"
+          },
+          {
+            "name": "McDonald's",
+            "type": "merchant",
+            "logo_url": "https://plaid-merchant-logos.plaid.com/mcdonalds.png",
+            "website": "mcdonalds.com",
+            "entity_id": "FastFoodEntity789",
+            "confidence_level": "VERY_HIGH"
+          }
+        ],
+        "date": "2025-03-15",
+        "datetime": "2025-03-15T18:00:00Z",
+        "authorized_date": "2025-03-15",
+        "authorized_datetime": "2025-03-15T18:00:00Z",
+        "location": {
+          "address": null,
+          "city": null,
+          "region": null,
+          "postal_code": null,
+          "country": null,
+          "lat": null,
+          "lon": null,
+          "store_number": null
+        },
+        "name": "DOORDASH MCDONALDS",
+        "merchant_name": "McDonald's",
+        "merchant_entity_id": "FastFoodEntity789",
+        "logo_url": "https://plaid-merchant-logos.plaid.com/mcdonalds.png",
+        "website": "mcdonalds.com",
+        "payment_meta": {
+          "by_order_of": null,
+          "payee": null,
+          "payer": null,
+          "payment_method": null,
+          "payment_processor": null,
+          "ppd_id": null,
+          "reason": null,
+          "reference_number": null
+        },
+        "payment_channel": "online",
+        "pending": false,
+        "pending_transaction_id": null,
+        "personal_finance_category": {
+          "primary": "FOOD_AND_DRINK",
+          "detailed": "FOOD_AND_DRINK_FAST_FOOD",
+          "confidence_level": "VERY_HIGH"
+        },
+        "personal_finance_category_icon_url": "https://plaid-category-icons.plaid.com/PFC_FOOD_AND_DRINK.png",
+        "transaction_id": "TXN017",
+        "transaction_code": null,
+        "transaction_type": "digital"
+      },
+      {
+        "account_id": "Acct123456789",
+        "account_owner": null,
+        "amount": 9.99,
+        "iso_currency_code": "USD",
+        "unofficial_currency_code": null,
+        "category": ["Entertainment", "Streaming Services"],
+        "category_id": "11007000",
+        "check_number": null,
+        "counterparties": [
+          {
+            "name": "Netflix",
+            "type": "merchant",
+            "logo_url": "https://plaid-merchant-logos.plaid.com/netflix.png",
+            "website": "netflix.com",
+            "entity_id": "StreamingEntity123",
+            "confidence_level": "VERY_HIGH"
+          }
+        ],
+        "date": "2025-03-18",
+        "datetime": "2025-03-18T00:00:00Z",
+        "authorized_date": "2025-03-18",
+        "authorized_datetime": "2025-03-18T00:00:00Z",
+        "location": {
+          "address": null,
+          "city": null,
+          "region": null,
+          "postal_code": null,
+          "country": null,
+          "lat": null,
+          "lon": null,
+          "store_number": null
+        },
+        "name": "NETFLIX SUBSCRIPTION",
+        "merchant_name": "Netflix",
+        "merchant_entity_id": "StreamingEntity123",
+        "logo_url": "https://plaid-merchant-logos.plaid.com/netflix.png",
+        "website": "netflix.com",
+        "payment_meta": {
+          "by_order_of": null,
+          "payee": null,
+          "payer": null,
+          "payment_method": null,
+          "payment_processor": null,
+          "ppd_id": null,
+          "reason": null,
+          "reference_number": null
+        },
+        "payment_channel": "online",
+        "pending": false,
+        "pending_transaction_id": null,
+        "personal_finance_category": {
+          "primary": "ENTERTAINMENT",
+          "detailed": "ENTERTAINMENT_STREAMING_SERVICES",
+          "confidence_level": "VERY_HIGH"
+        },
+        "personal_finance_category_icon_url": "https://plaid-category-icons.plaid.com/PFC_ENTERTAINMENT.png",
+        "transaction_id": "TXN018",
+        "transaction_code": null,
+        "transaction_type": "digital"
+      },
+      {
+        "account_id": "Acct123456789",
+        "account_owner": null,
+        "amount": 39.50,
+        "iso_currency_code": "USD",
+        "unofficial_currency_code": null,
+        "category": ["Travel", "Gas Stations"],
+        "category_id": "22009000",
+        "check_number": null,
+        "counterparties": [
+          {
+            "name": "Chevron",
+            "type": "merchant",
+            "logo_url": "https://plaid-merchant-logos.plaid.com/chevron.png",
+            "website": "chevron.com",
+            "entity_id": "GasEntity789",
+            "confidence_level": "VERY_HIGH"
+          }
+        ],
+        "date": "2025-03-20",
+        "datetime": "2025-03-20T13:00:00Z",
+        "authorized_date": "2025-03-20",
+        "authorized_datetime": "2025-03-20T13:00:00Z",
+        "location": {
+          "address": "3456 Fuel Rd",
+          "city": "San Diego",
+          "region": "CA",
+          "postal_code": "92108",
+          "country": "US",
+          "lat": 32.7500,
+          "lon": -117.1400,
+          "store_number": "6789"
+        },
+        "name": "CHEVRON #6789",
+        "merchant_name": "Chevron",
+        "merchant_entity_id": "GasEntity789",
+        "logo_url": "https://plaid-merchant-logos.plaid.com/chevron.png",
+        "website": "chevron.com",
+        "payment_meta": {
+          "by_order_of": null,
+          "payee": null,
+          "payer": null,
+          "payment_method": null,
+          "payment_processor": null,
+          "ppd_id": null,
+          "reason": null,
+          "reference_number": null
+        },
+        "payment_channel": "in store",
+        "pending": false,
+        "pending_transaction_id": null,
+        "personal_finance_category": {
+          "primary": "TRANSPORTATION",
+          "detailed": "TRANSPORTATION_GAS",
+          "confidence_level": "VERY_HIGH"
+        },
+        "personal_finance_category_icon_url": "https://plaid-category-icons.plaid.com/PFC_TRANSPORTATION.png",
+        "transaction_id": "TXN019",
+        "transaction_code": null,
+        "transaction_type": "place"
+      },
+      {
+        "account_id": "Acct123456789",
+        "account_owner": null,
+        "amount": 55.20,
+        "iso_currency_code": "USD",
+        "unofficial_currency_code": null,
+        "category": ["Shops", "Clothing"],
+        "category_id": "19013000",
+        "check_number": null,
+        "counterparties": [
+          {
+            "name": "H&M",
+            "type": "merchant",
+            "logo_url": "https://plaid-merchant-logos.plaid.com/hm.png",
+            "website": "hm.com",
+            "entity_id": "ClothingEntity123",
+            "confidence_level": "VERY_HIGH"
+          }
+        ],
+        "date": "2025-03-22",
+        "datetime": "2025-03-22T14:00:00Z",
+        "authorized_date": "2025-03-22",
+        "authorized_datetime": "2025-03-22T14:00:00Z",
+        "location": {
+          "address": "123 Fashion Ave",
+          "city": "San Diego",
+          "region": "CA",
+          "postal_code": "92109",
+          "country": "US",
+          "lat": 32.7600,
+          "lon": -117.1500,
+          "store_number": "4567"
+        },
+        "name": "H&M #4567",
+        "merchant_name": "H&M",
+        "merchant_entity_id": "ClothingEntity123",
+        "logo_url": "https://plaid-merchant-logos.plaid.com/hm.png",
+        "website": "hm.com",
+        "payment_meta": {
+          "by_order_of": null,
+          "payee": null,
+          "payer": null,
+          "payment_method": null,
+          "payment_processor": null,
+          "ppd_id": null,
+          "reason": null,
+          "reference_number": null
+        },
+        "payment_channel": "in store",
+        "pending": false,
+        "pending_transaction_id": null,
+        "personal_finance_category": {
+          "primary": "GENERAL_MERCHANDISE",
+          "detailed": "GENERAL_MERCHANDISE_CLOTHING",
+          "confidence_level": "VERY_HIGH"
+        },
+        "personal_finance_category_icon_url": "https://plaid-category-icons.plaid.com/PFC_GENERAL_MERCHANDISE.png",
+        "transaction_id": "TXN020",
+        "transaction_code": null,
+        "transaction_type": "place"
+      },
+      {
+        "account_id": "Acct123456789",
+        "account_owner": null,
+        "amount": 18.50,
+        "iso_currency_code": "USD",
+        "unofficial_currency_code": null,
+        "category": ["Food and Drink", "Restaurants", "Fast Food"],
+        "category_id": "13005032",
+        "check_number": null,
+        "counterparties": [
+          {
+            "name": "McDonald's",
+            "type": "merchant",
+            "logo_url": "https://plaid-merchant-logos.plaid.com/mcdonalds.png",
+            "website": "mcdonalds.com",
+            "entity_id": "FastFoodEntity789",
+            "confidence_level": "VERY_HIGH"
+          }
+        ],
+        "date": "2025-04-06",
+        "datetime": "2025-04-06T12:30:00Z",
+        "authorized_date": "2025-04-06",
+        "authorized_datetime": "2025-04-06T12:30:00Z",
+        "location": {
+          "address": "123 Main St",
+          "city": "Anytown",
+          "region": "CA",
+          "postal_code": "91234",
+          "country": "US",
+          "lat": 34.0522,
+          "lon": -118.2437,
+          "store_number": "123"
+        },
+        "name": "MCDONALD'S #123",
+        "merchant_name": "McDonald's",
+        "merchant_entity_id": "FastFoodEntity789",
+        "logo_url": "https://plaid-merchant-logos.plaid.com/mcdonalds.png",
+        "website": "mcdonalds.com",
+        "payment_meta": {
+          "by_order_of": null,
+          "payee": null,
+          "payer": null,
+          "payment_method": null,
+          "payment_processor": null,
+          "ppd_id": null,
+          "reason": null,
+          "reference_number": null
+        },
+        "payment_channel": "in store",
+        "pending": false,
+        "pending_transaction_id": null,
+        "personal_finance_category": {
+          "primary": "FOOD_AND_DRINK",
+          "detailed": "FOOD_AND_DRINK_FAST_FOOD",
+          "confidence_level": "VERY_HIGH"
+        },
+        "personal_finance_category_icon_url": "https://plaid-category-icons.plaid.com/PFC_FOOD_AND_DRINK.png",
+        "transaction_id": "TXN016",
+        "transaction_code": null,
+        "transaction_type": "place"
+      },
+      {
+        "account_id": "Acct123456789",
+        "account_owner": null,
+        "amount": 112.55,
+        "iso_currency_code": "USD",
+        "unofficial_currency_code": null,
+        "category": ["Shops", "Clothing and Accessories"],
+        "category_id": "19013000",
+        "check_number": null,
+        "counterparties": [
+          {
+            "name": "Nordstrom",
+            "type": "merchant",
+            "logo_url": "https://plaid-merchant-logos.plaid.com/nordstrom.png",
+            "website": "nordstrom.com",
+            "entity_id": "ClothingEntity123",
+            "confidence_level": "VERY_HIGH"
+          }
+        ],
+        "date": "2025-04-09",
+        "datetime": "2025-04-09T16:00:00Z",
+        "authorized_date": "2025-04-09",
+        "authorized_datetime": "2025-04-09T16:00:00Z",
+        "location": {
+          "address": "456 Fashion Blvd",
+          "city": "Beverly Hills",
+          "region": "CA",
+          "postal_code": "90210",
+          "country": "US",
+          "lat": 34.0736,
+          "lon": -118.4004,
+          "store_number": "100"
+        },
+        "name": "NORDSTROM #100",
+        "merchant_name": "Nordstrom",
+        "merchant_entity_id": "ClothingEntity123",
+        "logo_url": "https://plaid-merchant-logos.plaid.com/nordstrom.png",
+        "website": "nordstrom.com",
+        "payment_meta": {
+          "by_order_of": null,
+          "payee": null,
+          "payer": null,
+          "payment_method": "Credit Card",
+          "payment_processor": null,
+          "ppd_id": null,
+          "reason": null,
+          "reference_number": null
+        },
+        "payment_channel": "in store",
+        "pending": false,
+        "pending_transaction_id": null,
+        "personal_finance_category": {
+          "primary": "SHOPPING",
+          "detailed": "SHOPPING_CLOTHING",
+          "confidence_level": "VERY_HIGH"
+        },
+        "personal_finance_category_icon_url": "https://plaid-category-icons.plaid.com/PFC_SHOPPING.png",
+        "transaction_id": "TXN017",
+        "transaction_code": null,
+        "transaction_type": "place"
+      }
+    ],
+    "modified": [],
+    "removed": [],
+    "next_cursor": "cursor123",
+    "has_more": false,
+    "request_id": "Request123",
+    "transactions_update_status": "HISTORICAL_UPDATE_COMPLETE"
+  }
+  
+  

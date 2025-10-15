@@ -1,0 +1,141 @@
+/* src/styles/componentFixes.css */
+
+/* Fix for light gray text in modals and sections */
+.modal-content,
+.modal-content *,
+.budget-section,
+.budget-section *,
+.goals-section, 
+.goals-section *,
+.spending-section,
+.spending-section *,
+.debt-section,
+.debt-section * {
+  color: inherit !important;
+}
+
+/* Specific text color fixes */
+.modal-content label,
+.modal-content p,
+.modal-content span,
+.modal-content div {
+  color: #374151 !important; /* gray-700 */
+}
+
+.modal-content h1,
+.modal-content h2,
+.modal-content h3,
+.modal-content h4,
+.modal-content h5,
+.modal-content h6 {
+  color: #1f2937 !important; /* gray-800 */
+}
+
+/* Input and form element text */
+.modal-content input,
+.modal-content select,
+.modal-content textarea {
+  color: #1f2937 !important; /* gray-800 */
+}
+
+/* Button text should remain as designed */
+.modal-content button {
+  color: inherit !important;
+}
+
+/* Section headers and content */
+.budget-section h2,
+.budget-section h3,
+.budget-section h4,
+.goals-section h2,
+.goals-section h3,
+.goals-section h4,
+.spending-section h2,
+.spending-section h3,
+.spending-section h4,
+.debt-section h2,
+.debt-section h3,
+.debt-section h4 {
+  color: #1f2937 !important; /* gray-800 */
+}
+
+.budget-section p,
+.budget-section span,
+.budget-section div,
+.goals-section p,
+.goals-section span,
+.goals-section div,
+.spending-section p,
+.spending-section span,
+.spending-section div,
+.debt-section p,
+.debt-section span,
+.debt-section div {
+  color: #4b5563 !important; /* gray-600 */
+}
+
+/* Chart and visualization text */
+.chart-container,
+.chart-container * {
+  color: #374151 !important;
+}
+
+/* Error and success message text */
+.bg-red-100 {
+  color: #dc2626 !important; /* red-600 */
+}
+
+.bg-green-100 {
+  color: #059669 !important; /* green-600 */
+}
+
+.bg-yellow-100 {
+  color: #d97706 !important; /* yellow-600 */
+}
+
+/* Ensure placeholder text is visible */
+.modal-content input::placeholder,
+.modal-content select::placeholder,
+.modal-content textarea::placeholder {
+  color: #9ca3af !important; /* gray-400 */
+  opacity: 1 !important;
+}
+
+/* Debug panel text (if you're still using it) */
+.bg-yellow-50 {
+  color: #92400e !important; /* yellow-800 */
+}
+
+/* Specific fixes for budget modal */
+.fixed-costs-section *,
+.variable-expenses-section * {
+  color: #374151 !important;
+}
+
+/* Table and list text */
+.table-content td,
+.table-content th,
+.list-item {
+  color: #374151 !important;
+}
+
+/* Card content */
+.card-content,
+.card-content * {
+  color: inherit !important;
+}
+
+.card-content h1,
+.card-content h2,
+.card-content h3,
+.card-content h4,
+.card-content h5,
+.card-content h6 {
+  color: #1f2937 !important;
+}
+
+.card-content p,
+.card-content span,
+.card-content div {
+  color: #4b5563 !important;
+}

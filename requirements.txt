@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+sqlalchemy[asyncio]
+psycopg2-binary
+aiohttp
+lucide-react
+date-fns
+recharts
+qrcode

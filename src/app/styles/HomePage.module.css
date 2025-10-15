@@ -1,0 +1,29 @@
+/* HomePage.module.css */
+.main {
+    @apply bg-white;
+  }
+  
+  .nav {
+    @apply bg-white border-b border-gray-200 py-4 px-8 flex items-center justify-between;
+  }
+  
+  .navLinks {
+    @apply flex space-x-4;
+  }
+  
+  .navLink {
+    @apply text-gray-700 hover:text-gray-900;
+  }
+  
+  .section {
+    @apply p-8 bg-white;
+  }
+  
+  .heading {
+    @apply text-2xl font-bold mb-4;
+  }
+  
+  .text {
+    @apply text-gray-600;
+  }
+  

@@ -1,0 +1,125 @@
+/* src/styles/budgetChart.css */
+
+/* Tooltip styles for budget charts */
+.budget-tooltip,
+.breakdown-tooltip {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  pointer-events: none;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 200px;
+  line-height: 1.4;
+  transition: opacity 0.2s ease;
+}
+
+/* Hide tooltips by default and when they should be removed */
+.budget-tooltip.hidden,
+.breakdown-tooltip.hidden {
+  opacity: 0 !important;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+/* Ensure tooltips are removed when navigating */
+body:not(.tooltip-active) .budget-tooltip,
+body:not(.tooltip-active) .breakdown-tooltip {
+  opacity: 0 !important;
+  visibility: hidden;
+}
+
+/* Budget donut chart specific styles */
+.budget-arc {
+  transition: opacity 0.2s ease;
+}
+
+.spent-arc {
+  transition: opacity 0.2s ease;
+}
+
+.interaction-arc:hover + .budget-arc {
+  opacity: 0.6 !important;
+}
+
+.category-label {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  pointer-events: none;
+}
+
+/* Category breakdown chart styles */
+.bar {
+  transition: opacity 0.2s ease;
+}
+
+.bar:hover {
+  opacity: 0.8;
+}
+
+.bar-label {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  pointer-events: none;
+}
+
+/* Modal overlay */
+.category-breakdown-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.category-breakdown-content {
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow: auto;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .budget-tooltip,
+  .breakdown-tooltip {
+    font-size: 11px;
+    padding: 6px 10px;
+    max-width: 150px;
+  }
+  
+  .category-label {
+    font-size: 10px;
+  }
+  
+  .category-breakdown-content {
+    padding: 16px;
+    margin: 16px;
+  }
+}
+
+/* Animation for chart loading */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.budget-chart-container {
+  animation: fadeIn 0.3s ease-out;
+}

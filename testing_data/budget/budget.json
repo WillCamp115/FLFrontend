@@ -1,0 +1,32 @@
+{
+    "income": 3000,
+    "goal_id": "goal1",
+    "fixed_costs": [
+      {
+        "name": "Rent",
+        "limit": 1200
+      },
+      {
+        "name": "Utilities",
+        "limit": 200
+      }
+    ],
+    "variable_expenses": [
+      {
+        "name": "Shops",
+        "limit": 150
+      },
+      {
+        "name": "Food and Drink",
+        "limit": 100
+      },
+      {
+        "name": "Entertainment",
+        "limit": 50
+      },
+      {
+        "name": "Travel",
+        "limit": 80
+      }
+    ]
+  }
