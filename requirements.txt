@@ -9,3 +9,4 @@ date-fns
 recharts
 qrcode
 react
+next

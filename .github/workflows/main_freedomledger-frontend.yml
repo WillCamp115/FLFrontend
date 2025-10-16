@@ -29,6 +29,12 @@ jobs:
           npm run build --if-present
           npm run test --if-present
 
+      - name: Copy static files for standalone build
+        run: |
+          # Next.js standalone doesn't auto-copy static files, we must do it manually
+          cp -r .next/static .next/standalone/.next/static
+          cp -r public .next/standalone/public
+
       - name: Create deployment package
         run: |
           # Remove development files to reduce package size

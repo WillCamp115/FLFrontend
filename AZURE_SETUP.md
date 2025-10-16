@@ -4,6 +4,12 @@
 
 After deploying, you **must** configure the following settings in the Azure Portal:
 
+## Your Azure Frontend URL
+
+Your app will be available at: `https://freedomledger-frontend.azurewebsites.net` (or similar)
+
+**IMPORTANT**: Add this URL to your backend CORS allowed origins!
+
 ### 1. Set Startup Command
 
 1. Go to Azure Portal → Your App Service (freedomledger-frontend)
