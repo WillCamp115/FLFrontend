@@ -21,18 +21,23 @@ import {
   connectAuthEmulator, // only needed when you enable the emulator block
 } from "firebase/auth";
 
-const firebaseConfig = {
+// Only initialize Firebase in the browser (not during SSR/build)
+const firebaseConfig = typeof window !== 'undefined' ? {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
   authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
   projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
   storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
   messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
   appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
-};
+} : null;
 
-export const firebaseApp =
-  getApps().length === 0 ? initializeApp(firebaseConfig) : getApps()[0];
+// Create a dummy app for SSR/build that won't actually initialize
+export const firebaseApp = typeof window !== 'undefined' && firebaseConfig
+  ? (getApps().length === 0 ? initializeApp(firebaseConfig) : getApps()[0])
+  : null;
 
+// Only run debug logging in the browser
+if (typeof window !== 'undefined' && firebaseApp) {
 // Debug Firebase project configuration on app load
 console.log('=== FIREBASE PROJECT VERIFICATION ===');
 console.log('Project ID:', firebaseApp.options.projectId);
@@ -62,9 +67,10 @@ if (!firebaseApp.options.apiKey?.startsWith(expectedApiKeyPrefix)) {
 } else {
   console.log('✅ API Key matches expected value');
 }
+}
 
 // Auth instance
-export const auth = getAuth(firebaseApp);
+export const auth = firebaseApp ? getAuth(firebaseApp) : null;
 
 /* ─────────── Uncomment if you want to run the Auth emulator locally ───────────
 if (
