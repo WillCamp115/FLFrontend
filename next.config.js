@@ -14,8 +14,8 @@ const loginCSP = [
   `worker-src 'self' blob: https://www.google.com https://www.gstatic.com`,
   // frames: Google, reCAPTCHA, Plaid, and YOUR Firebase auth domain(s)
   `frame-src 'self' https://accounts.google.com https://www.google.com https://www.recaptcha.net https://www.gstatic.com https://freedomledger-1d1b2.firebaseapp.com https://*.firebaseapp.com https://*.web.app https://cdn.plaid.com`,
-  // XHR/fetch for Firebase + reCAPTCHA enterprise + Plaid + local backend
-  `connect-src 'self' ${isDev ? 'http://localhost:8000 ws://localhost:8000' : ''} https://www.google.com https://www.recaptcha.net https://www.googleapis.com https://securetoken.googleapis.com https://identitytoolkit.googleapis.com https://recaptchaenterprise.googleapis.com https://www.gstatic.com https://firebasestorage.googleapis.com https://firebasestorage.app https://cdn.plaid.com https://production.plaid.com https://sandbox.plaid.com https://development.plaid.com`,
+  // XHR/fetch for Firebase + reCAPTCHA enterprise + Plaid + local backend + Azure backend
+  `connect-src 'self' ${isDev ? 'http://localhost:8000 ws://localhost:8000' : ''} https://freedomledger-ahatbkbydzcjcfdc.canadacentral-01.azurewebsites.net https://www.google.com https://www.recaptcha.net https://www.googleapis.com https://securetoken.googleapis.com https://identitytoolkit.googleapis.com https://recaptchaenterprise.googleapis.com https://www.gstatic.com https://firebasestorage.googleapis.com https://firebasestorage.app https://cdn.plaid.com https://production.plaid.com https://sandbox.plaid.com https://development.plaid.com`,
   // styles/images required by reCAPTCHA
   `style-src 'self' 'unsafe-inline'`,
   `img-src 'self' data: https://www.gstatic.com https://www.google.com https://www.recaptcha.net`,
