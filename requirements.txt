@@ -8,3 +8,4 @@ lucide-react
 date-fns
 recharts
 qrcode
+react

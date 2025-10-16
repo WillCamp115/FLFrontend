@@ -1,11 +1,14 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, Suspense } from "react";
 import QRCode from "qrcode";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useAuth } from "../../contexts/AuthContext";
 import { auth } from "../../lib/firestoreClient";
 
-export default function MfaEnrollmentPage() {
+// Force dynamic rendering to prevent build-time errors on Azure
+export const dynamic = 'force-dynamic';
+
+function MfaEnrollmentContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const redirectTo = searchParams.get("redirect") || "/dashboard";
@@ -342,5 +345,21 @@ export default function MfaEnrollmentPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+// Wrap the content in Suspense to handle useSearchParams during build
+export default function MfaEnrollmentPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen flex items-center justify-center bg-gray-100">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-blue-600 mx-auto"></div>
+          <p className="mt-4 text-gray-700">Loading...</p>
+        </div>
+      </div>
+    }>
+      <MfaEnrollmentContent />
+    </Suspense>
   );
 }
