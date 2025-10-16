@@ -10,12 +10,10 @@ After deploying, you **must** configure the following settings in the Azure Port
 2. Navigate to **Configuration** → **General settings**
 3. Set **Startup Command** to:
    ```bash
-   pm2 start npm --name "next" -- start --no-daemon
+   node /home/site/wwwroot/node_modules/.bin/next start -p $PORT
    ```
-   OR if that doesn't work:
-   ```bash
-   npm run start
-   ```
+
+   **Important:** Use the full path to avoid Azure's symlink issues.
 
 ### 2. Add Application Settings
 
